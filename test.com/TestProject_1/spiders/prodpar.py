@@ -15,3 +15,4 @@ class ProdparSpider(scrapy.Spider):
     def parse(self, response):
         item = Product()
         item['product_url'] = response.url
+        return item

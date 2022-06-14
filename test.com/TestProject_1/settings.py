@@ -13,6 +13,13 @@ SPIDER_MODULES = ['TestProject_1.spiders']
 NEWSPIDER_MODULE = 'TestProject_1.spiders'
 
 
+FEED_EXPORT_ENCODING = "utf-8"
+FEED_EXPORT_FIELDS = ['product_url']
+
+
+FEED_FORMAT = "csv"
+FEED_URI = "products.csv"
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'TestProject_1 (+http://www.yourdomain.com)'
 
@@ -20,12 +27,12 @@ NEWSPIDER_MODULE = 'TestProject_1.spiders'
 ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 16
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-#DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = 0.4
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
