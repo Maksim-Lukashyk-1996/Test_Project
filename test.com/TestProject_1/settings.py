@@ -14,7 +14,7 @@ NEWSPIDER_MODULE = 'TestProject_1.spiders'
 
 
 FEED_EXPORT_ENCODING = "utf-8"
-FEED_EXPORT_FIELDS = ['product_url']
+FEED_EXPORT_FIELDS = ['product_url', 'address', 'name', 'phones', 'working_hours']
 
 
 FEED_FORMAT = "csv"
